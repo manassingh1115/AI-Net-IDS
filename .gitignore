@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Secrets
+.env
+*.env
+*.key
+*.pem
+
+# IDE
+.vscode/
+.idea/
+
+# AI-Net runtime data
+logs/*
+!logs/.gitkeep
+
+# Databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Runtime files
+*.log
+
+# Datasets / large files
+*.pcap
+*.pcapng
+*.zip
+
+# Generated reports and backups
+logs/reports/
+logs/database_backups/
+
+# Runtime CSV/JSON data
+logs/*.csv
+logs/*.json
+
+# Windows
+Thumbs.db
+Desktop.ini
+# Raw CIC-IDS2017 datasets - never upload
+data/raw/

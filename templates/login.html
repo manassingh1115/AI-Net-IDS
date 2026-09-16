@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI-Net | SOC Login</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#eef2f7;min-height:100vh;display:flex;align-items:center;justify-content:center;color:#0f172a}.login-card{width:min(420px,92vw);background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:34px;box-shadow:0 15px 45px rgba(15,23,42,.12)}.brand{font-size:30px;font-weight:900;margin-bottom:5px}.brand span{color:#2563eb}.sub{color:#64748b;margin-bottom:28px}.field{margin-bottom:17px}label{display:block;font-weight:700;font-size:13px;margin-bottom:7px}input{width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:9px;font-size:15px}input:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.12)}button{width:100%;padding:14px;border:0;border-radius:9px;background:#1d4ed8;color:white;font-size:15px;font-weight:800;cursor:pointer}.error{background:#fee2e2;color:#991b1b;border:1px solid #fecaca;padding:11px;border-radius:9px;margin-bottom:17px;font-size:13px}.demo{margin-top:22px;padding:14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;font-size:12px;color:#475569;line-height:1.7}.demo strong{color:#0f172a}.footer{text-align:center;color:#94a3b8;font-size:11px;margin-top:22px}
+</style>
+</head>
+<body>
+<div class="login-card">
+<div class="brand">AI-<span>Net</span></div>
+<div class="sub">Network Security Operations Center</div>
+{% if error %}<div class="error">{{ error }}</div>{% endif %}
+<form method="post" action="{{ url_for('login') }}">
+<input type="hidden" name="next" value="{{ request.args.get('next','') }}">
+<div class="field"><label>Username</label><input name="username" autocomplete="username" required autofocus></div>
+<div class="field"><label>Password</label><input type="password" name="password" autocomplete="current-password" required></div>
+<button type="submit">Sign In to SOC</button>
+</form>
+<div class="demo"><strong>Local demo accounts</strong><br>Admin: admin / admin123<br>SOC Analyst: analyst / analyst123<br>Viewer: viewer / viewer123</div>
+<div class="footer">AI-Net defensive security platform</div>
+</div>
+</body>
+</html>

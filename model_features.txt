@@ -1,0 +1,10 @@
+1. Avg Bwd Segment Size
+2. Packet Length Variance
+3. Bwd Packet Length Max
+4. Max Packet Length
+5. Bwd Packet Length Std
+6. Packet Length Std
+7. Average Packet Size
+8. Subflow Fwd Packets
+9. act_data_pkt_fwd
+10. Bwd Packet Length Mean

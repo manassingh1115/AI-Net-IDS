@@ -1,0 +1,29 @@
+{
+    "accuracy": 0.9993333333333333,
+    "precision": 0.9997998131589484,
+    "recall": 0.9988666666666667,
+    "f1_score": 0.9993330220769693,
+    "roc_auc": 0.9999273938888888,
+    "true_negative": 29994,
+    "false_positive": 6,
+    "false_negative": 34,
+    "true_positive": 29966,
+    "confusion_matrix": [
+        [
+            29994,
+            6
+        ],
+        [
+            34,
+            29966
+        ]
+    ],
+    "test_samples": 60000,
+    "training_samples": 240000,
+    "feature_count": 10,
+    "model_type": "RandomForestClassifier",
+    "classes": {
+        "0": "BENIGN",
+        "1": "DDoS"
+    }
+}
